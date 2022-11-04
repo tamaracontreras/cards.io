@@ -21,15 +21,35 @@
     <script src="site.js"></script>
   </head>
   <body>
-    <img src="img/logo.png">
-    Dogos
-    {navlinks}
-    <h1>{title}</h1>
-    {content1}
-    <a href="#"><img src="img/paw.png">Learn more</a>
-    {content2}
-    <a href="#"><img src="img/paw.png">Learn more</a>
-    {content3}
-    <a href="#"><img src="img/paw.png">Learn more</a>
+    <header>
+      <div class="container">
+        <div class="brand">
+          <img src="img/logo.png" />
+          Dogos
+        </div>
+        <nav>
+          {navlinks}
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1>{title}</h1>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-content">{content1}</div>
+            <a href="#"><img src="img/paw.png" />Learn more</a>
+          </div>
+          <div class="card">
+            <div class="card-content">{content2}</div>
+            <a href="#"><img src="img/paw.png" />Learn more</a>
+          </div>
+          <div class="card">
+            <div class="card-content">{content3}</div>
+            <a href="#"><img src="img/paw.png" />Learn more</a>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

@@ -35,3 +35,94 @@ html {
   font-size: 16px;
   line-height: 1.44;
 }
+
+a {
+  text-decoration: none;
+}
+.container {
+  padding: 0 var(--spacer-4);
+}
+header {
+  background-color: var(--secondary);
+  padding: var(--spacer-2);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  color: var(--gray-4);
+  font-weight: var(--font-weight-bold);
+}
+.brand img {
+  width: 35px;
+  margin-right: var(--spacer-2);
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  margin-left: var(--spacer-3);
+}
+nav ul li a {
+  color: var(--gray-4);
+  font-weight: var(--font-weight-bold);
+}
+nav ul li.active {
+  border-bottom: 2px solid var(--gray-4);
+}
+main {
+  padding: var(--spacer-4) 0;
+}
+main .container h1 {
+  margin-bottom: var(--spacer-4);
+  font-weight: var(--font-weight-bold);
+}
+.card {
+  width: 100%;
+  border: 1px solid var(--gray-2);
+  box-shadow: var(--shadows);
+  padding: var(--spacer-4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: var(--spacer-4);
+}
+.card-content {
+  margin-bottom: var(--spacer-3);
+}
+.card-content h2 {
+  margin-bottom: var(--spacer-3);
+  font-weight: var(--font-weight-bold);
+}
+.card-content p {
+  margin-bottom: var(--spacer-2);
+}
+.card a {
+  display: block;
+  background-color: var(--primary);
+  color: var(--gray-4);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  padding: var(--spacer-2) 0;
+}
+.card a img {
+  width: 16px;
+  margin-right: var(--spacer-2);
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 1280px;
+  }
+  .card-container {
+    display: flex;
+    gap: var(--spacer-4);
+  }
+  .card {
+    width: calc(100% / 3);
+  }
+}
